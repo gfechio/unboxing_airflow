@@ -23,8 +23,8 @@ Este repositório contém os arquivos e configurações necessárias para implem
 
 ## Pré-Requisitos
 
-- [Python](https://www.python.org/) (versão recomendada: 3.x)
-- [Apache Airflow](https://airflow.apache.org/) (versão recomendada: X.X.X)
+- [Python](https://www.python.org/) (versão recomendada: >= 3.9 )
+- [Apache Airflow](https://airflow.apache.org/) (versão recomendada: >= 2.5.1 )
 
 ## Configuração
 
