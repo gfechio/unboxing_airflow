@@ -1,67 +1,67 @@
 # Ukboxing Airflow
 
-![Ukboxing Airflow Logo](link_para_seu_logo.png)
+![Ukboxing Airflow Logo](link_to_your_logo.png)
 
-Bem-vindo ao repositório **Ukboxing Airflow**! Este é um projeto voltado para a utilização e configuração do Apache Airflow para automatização e orquestração de fluxos de trabalho.
+Welcome to the **Ukboxing Airflow** repository! This is a project focused on the use and configuration of Apache Airflow for workflow automation and orchestration.
 
-## Visão Geral
+## Overview
 
-Este repositório contém os arquivos e configurações necessárias para implementar o Apache Airflow, uma plataforma flexível e robusta para agendamento e execução de tarefas complexas. Você encontrará detalhes sobre a estrutura do projeto, configurações iniciais e exemplos de DAGs para começar.
+This repository contains the necessary files and configurations to implement Apache Airflow, a flexible and robust platform for scheduling and executing complex tasks. You will find details about the project structure, initial configurations, and DAG examples to get started.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
-|-- dags/                       # Diretório para armazenar os DAGs do Airflow
-|   |-- exemplo_dag.py          # Exemplo de DAG para ilustração
-|-- plugins/                    # Diretório para armazenar os plugins personalizados
-|   |-- meu_plugin.py           # Exemplo de plugin personalizado
-|-- config/                     # Diretório para configurações do Airflow
-|   |-- airflow.cfg             # Configurações principais do Airflow
-|-- README.md                   # Este arquivo
-|-- .gitignore                  # Arquivo para especificar os arquivos a serem ignorados pelo Git
+|-- dags/                       # Directory to store Airflow DAGs
+|   |-- example_dag.py          # Example DAG for illustration
+|-- plugins/                    # Directory to store custom plugins
+|   |-- my_plugin.py            # Example custom plugin
+|-- config/                     # Directory for Airflow configurations
+|   |-- airflow.cfg             # Main Airflow configurations
+|-- README.md                   # This file
+|-- .gitignore                  # File to specify files to be ignored by Git
 ```
 
-## Pré-Requisitos
+## Prerequisites
 
-- [Python](https://www.python.org/) (versão recomendada: >= 3.9 )
-- [Apache Airflow](https://airflow.apache.org/) (versão recomendada: >= 2.5.1 )
+- [Python](https://www.python.org/) (recommended version: >= 3.9)
+- [Apache Airflow](https://airflow.apache.org/) (recommended version: >= 2.5.1)
 
-## Configuração
+## Configuration
 
-1. Clone este repositório:
+1. Clone this repository:
 
 ```bash
 git clone https://github.com/gfechio/ukboxing-airflow.git
 cd ukboxing-airflow
 ```
 
-1. ```bash
+2. ```bash
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.yaml'
 ```
 
-2. ```bash
+3. ```bash
 mkdir -p ./dags ./logs ./plugins ./config
 echo -e "AIRFLOW_UID=$(id -u)" > .env
 ```
 
-3. ```bash
+4. ```bash
 docker compose up airflow-init
 ```
 
-4. ```bash
+5. ```bash
 docker compose up
 ```
 
-5. Acesse o Airflow através do navegador usando `http://localhost:8080`.
+6. Access Airflow through the browser using `http://localhost:8080`.
 
-## Exemplos de Uso
+## Usage Examples
 
-- Consulte o diretório `dags/` para exemplos de DAGs prontos para uso e personalização.
+- Check the `dags/` directory for ready-to-use and customizable DAG examples.
 
-## Contribuição
+## Contribution
 
-Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novas funcionalidades! Para saber mais sobre como contribuir, consulte nossa [Política de Contribuição](CONTRIBUTING.md).
+Feel free to contribute with improvements, bug fixes, or new features! To learn more about how to contribute, please refer to our [Contribution Policy](CONTRIBUTING.md).
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
